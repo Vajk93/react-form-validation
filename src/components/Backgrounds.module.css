@@ -1,0 +1,29 @@
+.desktopBg,
+.mobileBg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+}
+
+.desktopBg {
+  height: 100vh;
+  width: auto;
+}
+
+.mobileBg {
+  /* the img width is 375 px */
+  height: auto;
+  max-height: 21em;
+  width: 100vw !important;
+  display: none;
+}
+
+@media screen and (max-width: 915px) {
+  .mobileBg {
+    display: block;
+  }
+  .desktopBg {
+    display: none;
+  }
+}

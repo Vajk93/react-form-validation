@@ -1,0 +1,127 @@
+.bankcardContainer {
+  width: 35em;
+  height: 34em;
+  position: relative;
+}
+.frontsideCardContainer,
+.backsideCardContainer {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+}
+.frontsideCardContainer {
+  background-image: url("../../images/bg-card-front.png");
+  top: 0;
+  left: 0;
+  padding: 25px 30px;
+  z-index: 100;
+}
+.backsideCardContainer {
+  background-image: url("../../images/bg-card-back.png");
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+}
+.validationCode {
+  color: white;
+  animation: 1s anim infinite;
+  position: absolute;
+  right: 13%;
+  top: 45%;
+}
+
+.circles {
+  display: flex;
+  position: absolute;
+  top: 10%;
+}
+.circles div:nth-child(1) {
+  width: 46px;
+  height: 46px;
+  background: white;
+  border-radius: 50%;
+}
+.circles div:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  margin: 13px 17px;
+  border: 1px solid white;
+}
+
+.cardNumber {
+  font-size: 1.8em;
+  position: absolute;
+  top: 58%;
+}
+
+.nameAndDate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px; /* this is static */
+}
+
+span,
+p {
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* responsivity for smaller BANKCARD */
+@media screen and (max-width: 915px) {
+  .bankcardContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .frontsideCardContainer {
+    width: 300px;
+    height: 166px;
+    position: absolute;
+    top: 125px;
+    left: 5%;
+    right: auto;
+    border-radius: 10px;
+    z-index: 100;
+  }
+  .circles div:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+  }
+  .circles div:nth-child(2) {
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    border-radius: 50%;
+    margin: 8px 10px;
+    border: 1px solid white;
+  }
+  .nameAndDate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px; /* this is static */
+    font-size: 0.7em;
+  }
+  .thingsOnCard p,
+  .thingsOnCard span {
+    font-size: 1.1em;
+  }
+  .backsideCardContainer {
+    width: 300px;
+    height: 166px;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    right: auto;
+    border-radius: 10px;
+    z-index: 50;
+  }
+}
