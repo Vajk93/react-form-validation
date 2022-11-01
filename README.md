@@ -1,6 +1,4 @@
-A HTML CSS rész készen van, sok szopással,
-a componenseket (form, bankártya, és külön form és bankkártya) ne szedd szét, mert így reszponzív.
-A javascript részt elkezdheted elölről, mert én ezt most feladom, még nagy falat nekem, ezért gyakorlom az alapokat inkább
+
 
 # Getting Started with Create React App
 
