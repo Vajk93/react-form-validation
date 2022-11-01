@@ -1,3 +1,7 @@
+A HTML CSS rész készen van, sok szopással,
+a componenseket (form, bankártya, és külön form és bankkártya) ne szedd szét, mert így reszponzív.
+A javascript részt elkezdheted elölről, mert én ezt most feladom, még nagy falat nekem, ezért gyakorlom az alapokat inkább
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# react-form-validation
